@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!---------------------Font Links---------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!---------------------Css Style------------------------------>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body class="text-white">
+    <main>
+        <!---------------------section Sign Up--------------------------->
+        <section class="SignUp d-none">
+            <div class="d-flex justify-content-center m-5">
+                <div class="container ">
+                    <div class="w-75 mx-auto overflow-hidden box text-white">
+                        <h1 class="text-capitalize text-center  mt-5 mb-4  px-5">smart login system</h1>
+                        <form action="" class="mt-3 ">
+                            <input id="Name" type="text" class="mx-auto form-control" placeholder="Enter your name" >
+                            <p class="text-danger  mx-auto d-none ">The name must start with a capital letter[A-Z], then at least three letters and numbers {a,...,b,0,..,9}, and may contain spaces.</p>
+                            <input id="EmailToSignUp" type="text" class=" mx-auto  form-control " placeholder="Enter your email" >
+                            <p class="text-danger  mx-auto d-none " >The email must be in the standard email format, which is it must start with letters, numbers, special characters, or anything, then "@", then anything, then " . ", then anything (anything@anything.anything).</p>
+                            <input id="passToSignUp"  type="password" class=" mx-auto form-control" placeholder="Enter your password" >
+                            <p class="text-danger  mx-auto d-none " >The password must contain at least one uppercase letter[A-Z], a number{0,..,9}, lowercase letters{A,...,Z} and special characters.{#,$,%,&,...} and be between 6 to 20 </p>
+                            <p class="status mx-auto text-center d-none"></p>
+                        </form>
+                        <button class="buttonSignUp  position-relative start-50 translate-middle-x py-1  rounded-1 ">Sign Up</button>
+                        <div class=" d-flex justify-content-center">
+                            <p>You have an account?</p>
+                            <a href="#signin" class="linkOfPageSignin link-underline-light link-underline-opacity-0 link-underline-opacity-100-hover text-white  text-capitalize ps-2" >signin</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!---------------------section Login----------------------------->
+        <section class="Login  d-block">
+            <div class="d-flex justify-content-center m-5">
+                <div class="container ">
+                    <div class="w-75 mx-auto overflow-hidden box  text-white">
+                        <h1 class="text-capitalize text-center  mt-5 mb-4 px-5">smart login system</h1>
+                        <form action="" class="mt-3 ">
+                            <input id="EmailLogin" type="text" class="mx-auto  form-control  " placeholder="Enter your email" >
+                            <input id="passLogin"  type="password" class="mx-auto form-control  " placeholder="Enter your password" >
+                            <p class="text-center mx-auto d-none"></p>
+                        </form>
+                        <button class="buttonLogin  position-relative start-50 translate-middle-x py-1  rounded-1" >Login</button>
+                        <div class="d-flex justify-content-center">
+                            <p>Don’t have an account?</p>
+                            <a href="#signUp" class="linkOfPageLogout link-underline-light link-underline-opacity-0 link-underline-opacity-100-hover text-white  text-capitalize ps-2" >sign up</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------------section Home------------------------------>
+        <section class="home d-none vh-100 ">
+            <!---------------------navbar---------------------------->
+            <nav class="navbar navbar-expand-lg navbar bg-transparent border-bottom border-body position-relative top-0 start-0 end-0"  data-bs-theme="dark">
+                    <div class="container">
+                        <h1 class="text-uppercase text-white fs-4 ">smart login</h1>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <button class=" logoutInHome  rounded-1 mx-auto">Logout</button>
+                        </div>
+                    </div>
+            </nav>
+            <!---------------------Mypage---------------------------->
+            <div class="d-flex justify-content-center align-items-center my-5  h-75">
+                <div class="container ">
+                    <div class="w-75 mx-auto overflow-hidden box text-white mt-3">
+                        <h1 class="text-capitalize text-center  my-5   px-5">Welcome <span id="YourName"></span></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!---------------------JS code---------------------------->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+</html>
